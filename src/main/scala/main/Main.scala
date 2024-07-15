@@ -60,7 +60,7 @@ object Main {
     val consoleQuery = enrichedDF.writeStream
       .outputMode("append")
       .format("console")
-      .option("truncate", false)
+      .option("truncate", value = false)
       .trigger(Trigger.ProcessingTime("10 seconds"))
       .start()
 
@@ -82,7 +82,7 @@ object Main {
     val avgQuery = avgAmountDF.writeStream
       .outputMode("complete")
       .format("console")
-      .option("truncate", false)
+      .option("truncate", value = false)
       .trigger(Trigger.ProcessingTime("10 seconds"))
       .start()
 
@@ -115,7 +115,7 @@ object Main {
     val stateQuery = stateDF.writeStream
       .outputMode("update")
       .format("console")
-      .option("truncate", false)
+      .option("truncate", value = false)
       .trigger(Trigger.ProcessingTime("10 seconds"))
       .start()
 
