@@ -17,7 +17,7 @@ así como a integrar Spark con Kafka para consumir y procesar datos en streaming
 Se ha desarrollado un miniproyecto de generacion y procesamiento de movimientos de tarjetas para dar conocer 
 todo lo aprendido.
 
-# Generador de Datos: `DebitCardTransactionGenerator.scala`
+### Generador de Datos: `DebitCardTransactionGenerator.scala`
 
 El `DebitCardTransactionGenerator` es una aplicación Scala que simula la generación de 
 transacciones de tarjeta de débito y las envía a un tópico de Kafka.
@@ -27,7 +27,7 @@ transacciones de tarjeta de débito y las envía a un tópico de Kafka.
 - **Envío a Kafka**: Envía las transacciones generadas al tópico especificado en Kafka.
 - **Ciclo Continuo**: Realiza este proceso en un ciclo continuo hasta alcanzar un máximo de transacciones, respetando un intervalo de tiempo configurado entre cada transacción.
 
-# Consumidor de Datos: `Main.scala`
+### Consumidor de Datos: `Main.scala`
 
 El `Main` es una aplicación Scala que consume datos de transacciones de tarjeta de débito desde Kafka utilizando Spark Structured Streaming. Procesa los datos en tiempo real, calcula la media de los importes por ciudad y guarda los datos en formato JSON.
 
