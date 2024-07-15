@@ -1,0 +1,5 @@
+[
+  {"currency": "USD", "rate_to_eur": 0.85},
+  {"currency": "EUR", "rate_to_eur": 1.00},
+  {"currency": "GBP", "rate_to_eur": 1.17}
+]
